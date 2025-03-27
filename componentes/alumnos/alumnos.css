@@ -1,0 +1,192 @@
+body {
+    background-image: url("https://c.wallhere.com/images/4a/d8/193c61ab672c26315d92b046ef78-2055785.jpg!d");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal de la lista de alumnos */
+.alumnos-contenedor {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #9dadbd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.alumnos-contenedor h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Estilo para el campo de fecha */
+.fecha-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Selector de grados */
+.grado-selector {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    color: #555;
+}
+
+.input-alumno {
+    width: 70%;
+    padding: 12px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+.boton-agregar {
+    padding: 12px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 15px auto;
+    display: block;
+    font-size: 16px;
+}
+
+.boton-agregar:hover {
+    background-color: #357abd;
+}
+
+/* Lista de alumnos */
+.alumnos-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada item de alumno */
+.alumnos-lista li {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    gap: 20px;
+}
+
+.alumnos-lista li:hover {
+    transform: scale(1.02);
+    background-color: #f8f8f8;
+}
+
+/* Botones de asistencia dentro de cada item */
+.asistencia-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo para los botones de asistencia */
+.boton-asistencia {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #e0e0e0;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-asistencia:hover {
+    background-color: #d1d1d1;
+}
+
+/* Estilo para el campo de observación */
+.observacion-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    height: 80px;
+    resize: none;
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+/* Estilo para el botón de enviar observación */
+.boton-enviar-observacion {
+    padding: 10px 20px;
+    background-color: #ffb74d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.boton-enviar-observacion:hover {
+    background-color: #fb8c00;
+}
+
+/* Deshabilitar campos y botones después de enviar */
+.observacion-input:disabled, .boton-enviar-observacion:disabled {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+/* Animación de entrada para los elementos */
+.alumnos-lista li {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Estilos para la sección de grados y agregar alumno */
+.select-grado-container {
+    margin-bottom: 20px;
+}
+
+/* Botón de agregar alumno en móvil */
+@media screen and (max-width: 600px) {
+    .input-alumno, .grado-selector {
+        width: 100%;
+    }
+
+    .boton-agregar {
+        width: 100%;
+    }
+}

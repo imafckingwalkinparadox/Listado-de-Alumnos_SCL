@@ -1,0 +1,37 @@
+.logout-btn {
+    position: unset;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #3073b3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+
+}
+
+/* Efecto hover */
+.logout-btn:hover {
+    background: #3073b3;
+    transform: scale(1.05);
+}
+
+/* Efecto al hacer clic */
+.logout-btn:active {
+    transform: scale(0.95);
+}
+
+/* Responsive: Centrar en móviles */
+@media (max-width: 768px) {
+    .logout-btn {
+        position: static;
+        display: block;
+        margin: 20px auto;
+    }
+}

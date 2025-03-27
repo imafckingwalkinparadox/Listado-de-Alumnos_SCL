@@ -1,0 +1,96 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario de asistencia */
+.asistencia-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 40px;
+    background-image: url("https://c.wallhere.com/photos/68/a0/road_street_city_uk_travel_england_sky_urban-939813.jpg!d");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos para el formulario de asistencia */
+.asistencia-form {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor específico para el título */
+.asistencia-form .titulo {
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 1.5rem; /* Espacio entre el título y el formulario */
+    text-align: center;
+}
+
+/* Inputs del formulario de asistencia */
+.asistencia-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    outline: none;
+}
+
+/* Placeholder de los inputs */
+.asistencia-form input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Botones del formulario de asistencia */
+.asistencia-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover sobre los botones */
+.asistencia-btn:hover {
+    background: #ff4f85;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplicar animación al formulario de asistencia */
+.asistencia-form {
+    animation: fadeIn 0.5s ease-in-out;
+}

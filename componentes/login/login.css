@@ -1,0 +1,111 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del login y registro */
+.login-container,
+.registro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://c.wallhere.com/photos/68/a0/road_street_city_uk_travel_england_sky_urban-939813.jpg!d");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Estilos compartidos entre login y registro */
+.login-form,
+.registro-form {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    width: 320px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Inputs */
+.login-form input,
+.registro-form input,
+.registro-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    outline: none;
+}
+
+.login-form input::placeholder,
+.registro-form input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+/* Select */
+.registro-form select {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.4);
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+}
+
+/* Botones */
+.login-form button,
+.registro-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #ff7eb3;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover,
+.registro-form button:hover {
+    background: #ff4f85;
+}
+
+/* Enlace de registro */
+.login-form a {
+    display: block;
+    margin-top: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.login-form a:hover {
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.login-form,
+.registro-form {
+    animation: fadeIn 0.5s ease-in-out;
+}
